@@ -1,4 +1,5 @@
 # flutter_space
-flutter 的一些demo
 
-gggrgr 他吞吞吐吐
+## 环境配置
+macOS: 11.6.1
+flutter: 2.5.5
