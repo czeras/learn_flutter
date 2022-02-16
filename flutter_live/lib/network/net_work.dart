@@ -12,7 +12,7 @@ import 'package:bmmobile/utils/ui_util.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
-
+import 'http_api.dart';
 
 
 import 'package:oktoast/oktoast.dart';
@@ -24,7 +24,7 @@ class NetWork {
 
   static NetWork get instance => NetWork();
 
-  static Dio _dio = null;
+  static Dio? _dio = null;
 
   factory NetWork() {
     return _singleton;
