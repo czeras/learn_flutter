@@ -3,14 +3,29 @@ import 'package:flutter/material.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:oktoast/oktoast.dart';
 import 'package:get/get.dart';
-
+import 'package:flutter_downloader/flutter_downloader.dart';
+import '../configs/router_config.dart';
+import '../pages/launchpage/launch_page.dart';
+import '../constant/app_colors.dart';
 
 class DefaultApp {
   // 运行app
   static void run() async {
+    WidgetsFlutterBinding.ensureInitialized();
+    await FlutterDownloader.initialize(
+      debug: true
+    );
 
+    initApp();
+    runApp(MyApp());
   }
 
+  // 程序初始化操作
+  static void initApp(){
+    // 本地数据持久化
+
+    // 初始化日志工具
+  }
 
 }
 
