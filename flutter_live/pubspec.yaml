@@ -49,7 +49,6 @@ dependencies:
   des: ^0.0.2
   # 常用工具类 https://github.com/Sky24n/flustars
   flustars: ^2.0.1
-
   # 浮层
   ffloat: ^1.0.1
   # 虚线边框 https://github.com/ajilo297/Flutter-Dotted-Border
@@ -84,7 +83,6 @@ dependencies:
   wechat_assets_picker: ^6.3.1
   wechat_camera_picker: ^2.6.5
   extended_image: ^6.0.1
-
   #文件下载
   flutter_downloader: ^1.7.2
   permission_handler: ^9.1.0
