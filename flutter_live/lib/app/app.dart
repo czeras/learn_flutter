@@ -49,16 +49,15 @@ class MyApp extends StatelessWidget {
         getPages: RouterConfig.getPages,
         defaultTransition: Transition.rightToLeft,
         debugShowCheckedModeBanner: false,
-        title: '春播云诊所',
+        title: 'XX直播',
         theme: ThemeData(
-          appBarTheme: AppBarTheme(brightness:Brightness.light),
+          appBarTheme: AppBarTheme(systemOverlayStyle:SystemUiOverlayStyle.light),
           fontFamily: 'PingFangSC',
           primarySwatch: Colors.blue,
           visualDensity: VisualDensity.adaptivePlatformDensity,
           // scaffoldBackgroundColor: AppColors.COLOR_F3F3F3,
           scaffoldBackgroundColor: Colors.green
         ),
-        // home: LaunchPage(),
         home: LaunchPage(),
       ),
     );
