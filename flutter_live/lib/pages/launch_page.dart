@@ -12,8 +12,6 @@ class _LaunchPageState extends State<LaunchPage> {
 
   String version = "";
 
-
-
   @override
   void initState() {
     // TODO: implement initState
