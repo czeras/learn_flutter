@@ -18,6 +18,7 @@ class _LaunchPageState extends State<LaunchPage> {
   void initState() {
     // TODO: implement initState
     super.initState();
+    // 延时 3s 启动页完成之后 进入到首页
     Future.delayed(Duration(seconds: 3),(){
       // if(CBStringUtil.isEmpty(Global.token)||UserManager.getInstance().doctorModel==null){
       //   NavigatorUtil.goToLogin();
