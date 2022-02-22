@@ -18,7 +18,7 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 version: 1.0.0+1
 
 environment:
-  sdk: ">=2.16.0 <3.0.0"
+  sdk: ">=2.15.0 <3.0.0"
 
 # Dependencies specify other packages that your package needs in order to work.
 # To automatically upgrade your package dependencies to the latest versions
@@ -84,7 +84,7 @@ dependencies:
   wechat_camera_picker: ^2.6.5
   extended_image: ^6.0.1
   #文件下载
-  flutter_downloader: ^1.7.2
+#  flutter_downloader: ^1.7.2
   permission_handler: ^9.1.0
   path_provider: ^2.0.9
   flutter_swiper: ^1.1.6
