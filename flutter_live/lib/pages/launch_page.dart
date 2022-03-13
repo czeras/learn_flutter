@@ -2,6 +2,13 @@
 import 'package:flutter/material.dart';
 import 'package:package_info/package_info.dart';
 
+import '../util/tools/screen_fit.dart';
+import '../util/tools/string_util.dart';
+import '../util/storage/user_manager.dart';
+import '../util/storage/global.dart';
+import '../util/tools/navigator_util.dart';
+
+
 ///启动页
 class LaunchPage extends StatefulWidget {
   @override
@@ -18,16 +25,11 @@ class _LaunchPageState extends State<LaunchPage> {
     super.initState();
     // 延时 3s 启动页完成之后 进入到首页
     Future.delayed(Duration(seconds: 3),(){
-      // if(CBStringUtil.isEmpty(Global.token)||UserManager.getInstance().doctorModel==null){
-      //   NavigatorUtil.goToLogin();
-      // }else{
-      //   if(UserManager.getInstance().doctorModel.positionNameList==null){
-      //     NavigatorUtil.goToPerfect();
-      //   }else{
-      //     NavigatorUtil.goToHome();
-      //   }
-      //
-      // }
+      if(CBStringUtil.isEmpty(Global.token)||UserManager.getInstance().doctorModel==null){
+        NavigatorUtil.goToLogin();
+      }else{
+          NavigatorUtil.goToHome();
+      }
     });
     getVersion();
   }
@@ -41,12 +43,18 @@ class _LaunchPageState extends State<LaunchPage> {
 
   @override
   Widget build(BuildContext context) {
-
-    return Container(
-      color: Colors.white,
+    CBScreenFit.init(context);
+    return Scaffold(
+      body: Stack(
+        children: [
+          Container(
+            color: Colors.lightGreenAccent,
+          )
+        ],
+      ),
     );
 
-    // CBScreenFit.init(context);
+    //
     // return Scaffold(
     //   body: Stack(
     //     children: [

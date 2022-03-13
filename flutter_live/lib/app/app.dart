@@ -43,9 +43,14 @@ class MyApp extends StatelessWidget {
           fontSize: 16
       ),
       child: GetMaterialApp(
-        // builder: (BuildContext context, Widget child) {
-        //   return FlutterEasyLoading(child: MediaQuery(child: child,data:MediaQuery.of(context).copyWith(textScaleFactor: 1.0)));
-        // },
+        builder: (BuildContext context, Widget child) {
+          return FlutterEasyLoading(
+              child: MediaQuery(
+                  child: child,
+                  data:MediaQuery.of(context).copyWith(textScaleFactor: 1.0)
+              )
+          );
+        },
         getPages: RouterConfig.getPages,
         defaultTransition: Transition.rightToLeft,
         debugShowCheckedModeBanner: false,
