@@ -1,6 +1,10 @@
-#
-#  iOS 项目忽略文件汇总 
-#
+.idea
+.DS_Store
+.vscode
+
+
+*/Pods
+
 
 # Created by https://www.gitignore.io/api/swift,xcode,macos,flutter,appcode,android,objective-c,androidstudio,visualstudiocode
 # Edit at https://www.gitignore.io/?templates=swift,xcode,macos,flutter,appcode,android,objective-c,androidstudio,visualstudiocode
@@ -504,9 +508,12 @@ hs_err_pid*
 # End of https://www.gitignore.io/api/swift,xcode,macos,flutter,appcode,android,objective-c,androidstudio,visualstudiocode
 Icon
 
-gifmaker/Add/Extra/QQSDK/TencentOpenAPI.framework/TencentOpenAPI
-gifmaker/Add/Extra/QQSDK/TencentOpenAPI.framework/Headers/QQApiInterface.h
-gifmaker/Add/Extra/QQSDK/TencentOpenAPI.framework/Headers/QQApiInterfaceObject.h
-gifmaker/Add/Extra/QQSDK/TencentOpenAPI.framework/Headers/sdkdef.h
-gifmaker/Add/Extra/QQSDK/TencentOpenAPI.framework/Headers/TencentOAuth.h
-gifmaker/Add/Extra/QQSDK/TencentOpenAPI.framework/Resources/ios_open_sdk_3.3.1.21_iphone
+## 这里不理解为什么  所以先注释掉 -------
+# gifmaker/Add/Extra/QQSDK/TencentOpenAPI.framework/TencentOpenAPI
+# gifmaker/Add/Extra/QQSDK/TencentOpenAPI.framework/Headers/QQApiInterface.h
+# gifmaker/Add/Extra/QQSDK/TencentOpenAPI.framework/Headers/QQApiInterfaceObject.h
+# gifmaker/Add/Extra/QQSDK/TencentOpenAPI.framework/Headers/sdkdef.h
+# gifmaker/Add/Extra/QQSDK/TencentOpenAPI.framework/Headers/TencentOAuth.h
+# gifmaker/Add/Extra/QQSDK/TencentOpenAPI.framework/Resources/ios_open_sdk_3.3.1.21_iphone
+
+
